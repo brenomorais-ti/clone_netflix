@@ -9,12 +9,17 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Netflix;
+    src: url(../font/BebasNeue.otf);
+ }
+
 /*Base*/
 
 body{
     background-color: var(--preta);
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header .container{
@@ -27,7 +32,7 @@ header .container{
 header .logo{
     margin-left: 10px;
     color: var(--vermelho);
-    font-family: "Arial Black", Times;
+    font-family: Netflix;
     font-size: 40px;
 }
 
@@ -48,13 +53,20 @@ header nav{
 
 /*Banner principal*/
 
+.container{
+    margin-left: 20px;
+}
+
 .filme-principal{
+    /*tamanho da font*/
     font-size: 16px;
+    /*imagem de background e um degradê pretro por cima*/
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-house.jpg');
-    
+    /*Tamanho da div*/
     height: 400px;
+    /*faz com que a imagem de fundo ocupe toda a area da div, assim ela não fica cortada*/
     background-size: cover;
-    
+    /*tipo de alinhamento das divs filhas*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,9 +74,30 @@ header nav{
 }
 
 .filme-principal .descricao{
+    margin-top: 10px;
     margin-bottom: 40px;
+    width: 60%;
 }
 
 .titulo{
+    margin-top: 10%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    border-radius: 3px;
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 12px;
+    /*uso do cursor*/
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
 }
