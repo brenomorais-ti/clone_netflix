@@ -101,3 +101,11 @@ header nav{
     background-color: white;
     color: black;
 }
+
+/*menu de filmes*/
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
